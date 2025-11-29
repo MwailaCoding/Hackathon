@@ -9,6 +9,5 @@ setuptools>=65.5.1
 wheel>=0.40.0
 gunicorn==20.1.0
 matplotlib==3.8.2
-# Add these if your app uses them:
 seaborn==0.12.2
 plotly==5.17.0
