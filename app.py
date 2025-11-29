@@ -242,9 +242,13 @@ def get_country_analysis(country_name):
 def compare_countries():
     """Compare multiple countries"""
     try:
+        # Retrieve the 'countries' parameter from the query string
         countries = request.args.getlist('countries')
         if not countries:
-            return jsonify({'error': 'No countries specified'}), 400
+            return jsonify({'error': "No countries specified. Please provide a list of countries."}), 400
+
+        # Debugging: Log the received countries
+        print(f"Received countries for comparison: {countries}")
 
         comparison_data = {}
         latest_year = analyzer.df['Year'].max()
@@ -269,13 +273,14 @@ def compare_countries():
                 }
 
         if not comparison_data:
-            return jsonify({'error': 'No data available for the specified countries'}), 400
+            return jsonify({'error': "No data available for the specified countries."}), 404
 
         return jsonify({
             'comparison_year': int(latest_year),
             'countries': comparison_data
         })
     except Exception as e:
+        print(f"Error in compare_countries endpoint: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/cluster-analysis')
