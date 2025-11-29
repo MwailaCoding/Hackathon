@@ -153,7 +153,7 @@ analyzer = AfricanFiscalAnalyzer()
 @app.route('/')
 def dashboard():
     """Main dashboard"""
-    return render_template('dashboard.html')
+    return jsonify({"message": "Welcome to the African Fiscal Analyzer API!"})
 
 @app.route('/api/overview')
 def get_overview():
