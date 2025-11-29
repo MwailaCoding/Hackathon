@@ -1,0 +1,11 @@
+
+
+1. **Frontend Repository**:
+   - GitHub Repository: [Hackathon2](https://github.com/MwailaCoding/Hackathon2)
+   - Hosted Link: [UchumiBora Frontend](https://uchumibora.vercel.app/)
+   - Description: This repository contains the React-based frontend for the UchumiBora application. It is hosted on Vercel.
+
+2. **Backend Repository**:
+   - GitHub Repository: [Hackathon](https://github.com/MwailaCoding/Hackathon)
+   - Hosted Link: [UchumiBora Backend](https://hackathon-1-boow.onrender.com/)
+   - Description: This repository contains the Flask-based backend for the UchumiBora application. It is hosted on Render.
