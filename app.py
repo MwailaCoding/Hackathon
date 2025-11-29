@@ -245,10 +245,10 @@ def compare_countries():
         countries = request.args.getlist('countries')
         if not countries:
             return jsonify({'error': 'No countries specified'}), 400
-            
+
         comparison_data = {}
         latest_year = analyzer.df['Year'].max()
-        
+
         for country in countries:
             country_data = analyzer.df[
                 (analyzer.df['Country'] == country) & 
@@ -267,7 +267,10 @@ def compare_countries():
                     'region': latest['Region'],
                     'income_group': latest['Income_Group']
                 }
-        
+
+        if not comparison_data:
+            return jsonify({'error': 'No data available for the specified countries'}), 400
+
         return jsonify({
             'comparison_year': int(latest_year),
             'countries': comparison_data

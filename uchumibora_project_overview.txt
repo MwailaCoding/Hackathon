@@ -1,0 +1,136 @@
+# UchumiBora Project Overview
+
+## Project Description
+UchumiBora is a comprehensive platform designed to analyze African fiscal and economic data. The project aims to provide deep insights into government finances, debt sustainability, economic trends, and policy recommendations across African nations. It combines a React-based frontend with a Flask-based backend to deliver a seamless and interactive user experience.
+
+---
+
+## Project Structure
+
+### 1. **Frontend**
+   - **Repository**: [Hackathon2](https://github.com/MwailaCoding/Hackathon2)
+   - **Hosted Link**: [UchumiBora Frontend](https://uchumibora.vercel.app/)
+   - **Description**: The frontend is built using React and TypeScript. It leverages Tailwind CSS for styling and Recharts for data visualization. The frontend is hosted on Vercel.
+
+   #### Key Features:
+   - Responsive design for all devices.
+   - Interactive dashboards and charts.
+   - Country-specific analysis and comparisons.
+   - Advanced visualizations like radar charts, bar charts, and line charts.
+
+### 2. **Backend**
+   - **Repository**: [Hackathon](https://github.com/MwailaCoding/Hackathon)
+   - **Hosted Link**: [UchumiBora Backend](https://hackathon-1-boow.onrender.com/)
+   - **Description**: The backend is built using Flask. It provides RESTful API endpoints for the frontend to fetch data. The backend is hosted on Render.
+
+   #### Key Features:
+   - API endpoints for country analysis, comparisons, and clustering.
+   - Machine learning models for predictive analysis.
+   - Data preprocessing and advanced metrics calculations.
+
+---
+
+## Technology Stack
+
+### Frontend:
+- **Framework**: React with TypeScript
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Routing**: React Router DOM
+- **Build Tool**: Vite
+- **Hosting**: Vercel
+
+### Backend:
+- **Framework**: Flask
+- **Machine Learning**: Scikit-learn
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **Hosting**: Render
+
+---
+
+## Key Functionalities
+
+### 1. Overview Dashboard
+- Displays key metrics like GDP growth, debt-to-GDP ratio, inflation, and HDI.
+- Regional and income group breakdowns.
+- Interactive charts for better data visualization.
+
+### 2. Country Analysis
+- Detailed analysis of individual countries.
+- Historical trends and risk assessments.
+- Advanced metrics like fiscal space and debt sustainability.
+
+### 3. Compare Countries
+- Side-by-side comparison of multiple countries.
+- Radar and bar charts for visual comparisons.
+
+### 4. Cluster Analysis
+- Groups countries based on economic characteristics using machine learning.
+- Scatter plots for cluster visualization.
+
+### 5. Early Warning System
+- Identifies economic risks like high debt or inflation.
+- Provides actionable insights for risk mitigation.
+
+### 6. Policy Recommendations
+- AI-powered recommendations for economic policies.
+- Focuses on debt management, economic growth, and human development.
+
+### 7. Fiscal Space Analysis
+- Measures government financial flexibility.
+- Highlights top-performing countries.
+
+### 8. Debt Sustainability Dashboard
+- Comprehensive analysis of debt sustainability.
+- Categorizes countries into sustainable, moderately sustainable, at risk, or unsustainable.
+
+---
+
+## How to Run the Project
+
+### Frontend:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MwailaCoding/Hackathon2.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Hackathon2
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Backend:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MwailaCoding/Hackathon.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Hackathon
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Flask server:
+   ```bash
+   python app.py
+   ```
+
+---
+
+## Contributors
+- **MwailaCoding**: Lead Developer
+
+---
+
+## License
+This project is licensed under the MIT License.
