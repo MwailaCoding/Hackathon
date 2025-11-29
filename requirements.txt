@@ -1,8 +1,9 @@
+python-version=3.10
 flask==2.3.3
 flask-cors==4.0.0
 pandas==2.0.3
 numpy==1.24.3
 scikit-learn==1.3.0
 openpyxl==3.1.2
-setuptools>=65.5.1  # Updated setuptools version
-wheel>=0.40.0       # Updated wheel version
+setuptools>=65.5.1
+wheel>=0.40.0
